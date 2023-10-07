@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 export default function Navbar(props) {
     return (
@@ -19,13 +20,24 @@ export default function Navbar(props) {
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    Projects
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/">Action</a></li>
-                                    <li><a className="dropdown-item" href="/">Another action</a></li>
+                                    <li><a className="dropdown-item" href="https://developeryogesh.netlify.app" rel="noreferrer" target='_blank'>Personal Portfolio</a></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="/">Something else here</a></li>
+                                    <li><a className="dropdown-item" href="https://yogeshnext.netlify.app" rel="noreferrer" target='_blank'>Next APP</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://jobsarkari.netlify.app" rel="noreferrer" target='_blank'>Job Sarkari</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://letsbuildprojects.netlify.app" rel="noreferrer" target='_blank'>Let's Build Projects</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://dailycart.netlify.app" rel="noreferrer" target='_blank'>Daily Cart</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://textflix.netlify.app" rel="noreferrer" target='_blank'>TextFlix</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://bcaacademy.netlify.app" rel="noreferrer" target='_blank'>BCA Notes</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://bcaquestionpaper.netlify.app" rel="noreferrer" target='_blank'>BCA Question Paper</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
@@ -41,4 +53,10 @@ export default function Navbar(props) {
             </nav>
         </div>
     )
+}
+Navbar.prototype = {
+    title: Proptypes.string.isRequired
+}
+Navbar.defaultProps = {
+    title: "My app"
 }
