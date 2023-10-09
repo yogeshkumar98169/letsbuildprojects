@@ -4,10 +4,10 @@ import '../App.css'
 
 export default function Containers(props) {
     return (
-        <div class=" container container-sm my-2 d-inline-block flex-wrap justify-content-evenly gap-4 mw-100">
-            <div class="card">
-                <img src={titleImg} class="img-thumbnail" alt="..." />
-                <div class="card-body">
+        <div class=" container container-sm my-2">
+            <div class="card d-flex flex-row w-100">
+                <img src={titleImg} class="w-50 h-auto" alt="..." style={{ width: "150px", height: "150px" }} />
+                <div class="card-body w-70">
                     <h5 class="card-title">{props.title}</h5>
                     <p class="card-text">{props.description}</p>
                     <a href={props.link} class="btn btn-primary">{props.linkText}</a>
